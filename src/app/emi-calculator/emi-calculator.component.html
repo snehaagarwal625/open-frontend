@@ -1,0 +1,39 @@
+<mat-card class="emi-card">
+  <mat-card-header>
+    <mat-card-title>Eligibility Calculator</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="box">
+      <div style="padding-bottom: 10px;">Monthly income</div>
+      <div class="numbers">{{income | currency:"&#8377;"}}</div>
+      <mat-slider class="" min=100000 max=300000 step=1 [(ngModel)]="income">
+      </mat-slider>
+      <div class="high-low">
+        <div>&#8377;1,00,000</div>
+        <div>&#8377;3,00,000</div>
+      </div>
+    </div>
+    <div class="box">
+      <div style="padding-bottom: 10px;">Monthly expense</div>
+      <div class="numbers">{{expense | currency:"&#8377;"}}</div>
+      <mat-slider class="" min=0 max=200000 [(ngModel)]="expense">
+      </mat-slider>
+    </div>
+    <div class="box">
+      <div>Repayment time</div>
+      <mat-form-field appearance="fill">
+        <mat-select [(value)]="selectedTenure" class="numbers">
+          <mat-option [value]="option.value" *ngFor="let option of tenure">{{ option.displayText }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="existing-loans">
+      <span>Do you have existing loan</span>
+      <mat-slide-toggle (change)="onToggle()"></mat-slide-toggle>
+    </div>
+    <div class="box">Emi of Exiting loan</div>
+    <mat-form-field class="emi-value">
+      <input class="numbers" matInput value="&#8377;15000" [disabled]="!hasExistingLoan">
+    </mat-form-field>
+  </mat-card-content>
+</mat-card>

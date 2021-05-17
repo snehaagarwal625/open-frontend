@@ -1,0 +1,65 @@
+.header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+}
+.logo{
+    top: 27px;
+    left: 120px;
+    width: 90px;
+}
+
+.mat-toolbar{
+    background: ghostwhite;
+}
+
+.nav-bar-links{
+    &__links{
+        margin: 10px;
+        border: 0;
+        font: normal normal normal 25px/34px Open Sans;
+        background-color: transparent;
+        width: 108px;
+        height: 34px;
+        &:hover{
+            color:#663399;
+            cursor: pointer;
+        }
+    }
+    &__btnlinks1{
+        font: normal normal normal 25px/34px Open Sans;
+        width: 166px;
+        height: 45px;
+        margin:10px;
+        border-radius: 24px;
+        background: transparent;
+        border: 1px solid #9F62C9;
+        color: #9F62C9;
+
+        &:hover{
+            cursor: pointer;
+            background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 20px #00000033;
+            color: white;
+
+        }
+    }
+    &__btnlinks2{
+        font: normal normal normal 25px/34px Open Sans;
+        width: 166px;
+        height: 45px;
+        margin:10px;
+        border-radius: 24px;
+        background: #663399;
+        color: white;
+        &:hover{
+            cursor: pointer;
+            background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 20px #00000033;
+            color: white;
+
+        }
+    }
+}

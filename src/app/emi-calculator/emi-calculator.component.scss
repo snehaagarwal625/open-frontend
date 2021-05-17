@@ -1,0 +1,75 @@
+$base-padding: 20px 20px 0 20px;
+.emi-card{
+    margin-top: 170px;
+    width: 380px;
+    height: 675px;
+    opacity: 1;
+    background: white;
+    border-radius: 25px;
+}
+.mat-slider{
+    width: 100%;
+}
+.existing-loans{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.mat-form-field {
+    width: 100%;
+}
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background: transparent !important;
+ }
+
+ .mat-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+ }
+
+ .mat-card-content{
+     padding: 20px;
+ }
+
+ .box {
+     padding: $base-padding;
+ }
+
+.existing-loans {
+    padding: 20px;
+}
+
+.emi-value {
+    padding: 0px 20px 20px 20px;
+}
+
+.numbers {
+    font-size: x-large;
+}
+.high-low{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: lighter;
+    padding: 0px 10px 0px 10px;
+}
+
+::ng-deep .mat-accent .mat-slider-thumb {
+    background-color: #663399;
+} 
+::ng-deep .mat-accent .mat-slider-thumb-label {
+    background-color: #663399;
+} 
+::ng-deep .mat-accent .mat-slider-track-fill {
+    background-color: #663399;
+} 
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: white; /*replace with your color*/
+}
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #663399;  /*replace with your color*/
+}
